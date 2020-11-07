@@ -29,7 +29,123 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+            <ul>
+                <li class="row">
+                    <div class="hr" id="9"></div>
+                    <input class="textarea" id="first" id="store-server"></input>
+                    <button class="saveButton" id="icon"></button>
+                </li>
+                <li class="row">
+                    <div class="hr" id="9"></div>
+                    <input class="textarea" id="first" id="store-server"></input>
+                    <button class="saveButton" id="icon"></button>
+                </li>
+                <li class="row">
+                    <div class="hr" id="9"></div>
+                    <input class="textarea" id="first" id="store-server"></input>
+                    <button class="saveButton" id="icon"></button>
+                </li>
+                <li class="row">
+                    <div class="hr" id="9"></div>
+                    <input class="textarea" id="first" id="store-server"></input>
+                    <button class="saveButton" id="icon"></button>
+                </li>
+                <li class="row">
+                    <div class="hr" id="9"></div>
+                    <input class="textarea" id="first" id="store-server"></input>
+                    <button class="saveButton" id="icon"></button>
+                </li>
+                <li class="row">
+                    <div class="hr" id="9"></div>
+                    <input class="textarea" id="first" id="store-server"></input>
+                    <button class="saveButton" id="icon"></button>
+                </li>
+                <li class="row">
+                    <div class="hr" id="9"></div>
+                    <input class="textarea" id="first" id="store-server"></input>
+                    <button class="saveButton" id="icon"></button>
+                </li>
+                <li class="row">
+                    <div class="hr" id="9"></div>
+                    <input class="textarea" id="first" id="store-server"></input>
+                    <button class="saveButton" id="icon"></button>
+                </li>
+                <li class="row">
+                    <div class="hr" id="9"></div>
+                    <input class="textarea" id="first" id="store-server"></input>
+                    <button class="saveButton" id="icon"></button>
+                </li>
+            </ul>
+        </div>
+
+        <script type="text/javascript">
+
+        var dayOne = $('#currentDay')
+        var dayYear = moment().format("LLL")
+        var date = new Date (dayYear)
+        var hour = date.getHours()
+        dayOne.text(dayYear)
+
+        var hour9 = $("#9")
+        var hour10 = $("#10")
+        var hour11 = $("#11")
+        var hour12 = $("#12")
+        var hour13 = $("#1")
+        var hour14 = $("#2")
+        var hour15 = $("#3")
+        var hour16 = $("#4")
+        var hour17 = $("#5")
+
+        hour9.text("9:00 AM")
+        hour10.text("10:00 AM")
+        hour11.text("11:00 AM")
+        hour12.text("12:00 PM")
+        hour13.text("01:00 PM")
+        hour14.text("02:00 PM")
+        hour15.text("03:00 PM")
+        hour16.text("04:00 PM")
+        hour17.text("05:00 PM")
+
+        $("#icon1").text("SAVE")
+        $("#icon2").text("SAVE")
+        $("#icon3").text("SAVE")
+        $("#icon4").text("SAVE")
+        $("#icon5").text("SAVE")
+        $("#icon6").text("SAVE")
+        $("#icon7").text("SAVE") 
+        $("#icon8").text("SAVE") 
+        $("#icon9").text("SAVE")
+
+
+        var hourNo1 = 9
+        var hourNo2 = 10
+        var hourNo3 = 11
+        var hourNo4 = 12
+        var hourNo5 = 13
+        var hourNo6 = 14
+        var hourNo7 = 15
+        var hourNo8 = 16
+        var hourNo9 = 17
+
+        for (var t = 9; t < 18; t++){
+            setupRow(t)
+        }
+
+        function setupRow(rowIndex){
+            function getElemtId(){
+                switch (rowIndex) {
+                    case hourNo1: return "#first"
+                    case hourNo2: return "#second"
+                    case hourNo3: return "#third"
+                    case hourNo4: return "#fourth"
+                    case hourNo5: return "#fifth"
+                    case hourNo6: return "#sixth"
+                    case hourNo7: return "#seventh"
+                    case hourNo8: return "#eighth"
+                    case hourNo9: return "#ninth"
+                }
+            }
+        }
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
