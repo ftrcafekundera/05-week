@@ -6,7 +6,7 @@ This was a project to create a simple calendar application that allows a user to
 
 # Installation
 
-To access the website, please use the following link: (INSERT LINK). If you have arrived at the right page, you should see the following web page:
+To access the website, please use the following link: (https://ftrcafekundera.github.io/05-week/). If you have arrived at the right page, you should see the following web page:
 
 (Insert SCREENSHOT)
 
